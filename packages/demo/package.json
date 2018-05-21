@@ -1,6 +1,6 @@
 {
-  "name": "@lcgc-ui/demo",
-  "version": "0.0.21-0",
+  "name": "@lcgc-ui/demo1",
+  "version": "0.0.22-0",
   "description": "This is a Demo component",
   "main": "dist/es/index.js",
   "scripts": {
