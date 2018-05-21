@@ -1,6 +1,6 @@
 {
-  "name": "demo",
-  "version": "0.0.17-0",
+  "name": "scaffold-ui-demo",
+  "version": "0.0.18-0",
   "description": "This is a Demo component",
   "main": "dist/es/index.js",
   "scripts": {
