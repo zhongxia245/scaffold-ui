@@ -84,6 +84,11 @@ storiesOf('Demo', module).add(
 
 > withInfo 用来编写 组件的说明文档
 
+```bash
+# 启动storybook 查看效果
+yarn run storybook
+```
+
 ## 四、打包部署到 npm 库
 
 ```bash
