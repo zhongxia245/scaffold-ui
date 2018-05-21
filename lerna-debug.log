@@ -6,16 +6,86 @@
 5 silly isInitialized true
 6 silly existsSync /Users/zhongxia/Code/component/lcgc-ui/VERSION
 7 silly initialize attempt
-8 info current version 0.0.0
+8 info current version 0.0.20-0
 9 silly isDetachedHead
 10 silly getCurrentBranch
-11 error initialize caught error
-12 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-12 error Use '--' to separate paths from revisions, like this:
-12 error 'git <command> [<revision>...] -- [<file>...]'
-12 error
-12 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-12 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-12 error     at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:202:59)
-12 error     at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:45:37)
-12 error     at PublishCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:260:36)
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag v0.0.20-0
+21 info Comparing with v0.0.20-0.
+22 silly diffSinceIn v0.0.20-0 packages/demo
+23 silly diff
+24 info Checking for prereleased packages...
+25 verbose prereleased @lcgc-ui/demo
+26 silly collectDependents
+27 silly isPackageDependentOf @lcgc-ui/demo @lcgc-ui/demo
+28 silly collectUpdates
+29 verbose has filtered update @lcgc-ui/demo
+30 silly initialize success
+31 silly execute attempt
+32 silly addFile /Users/zhongxia/Code/component/lcgc-ui/lerna.json
+33 silly runScriptSync preversion @lcgc-ui/scaffold-ui
+34 silly runScriptSync preversion @lcgc-ui/demo
+35 silly runScriptSync version @lcgc-ui/demo
+36 silly runScriptSync version @lcgc-ui/scaffold-ui
+37 silly addFile /Users/zhongxia/Code/component/lcgc-ui/packages/demo/package.json
+38 silly commit v0.0.21-0
+39 verbose commit [ 'commit', '--no-verify', '-m', 'v0.0.21-0' ]
+40 silly addTag v0.0.21-0
+41 silly runScriptSync postversion @lcgc-ui/demo
+42 silly runScriptSync postversion @lcgc-ui/scaffold-ui
+43 info publish Publishing packages to npm...
+44 silly existsSync /Users/zhongxia/Code/component/lcgc-ui/packages/demo/scripts/prepublish.js
+45 verbose execScript No prepublish script found at /Users/zhongxia/Code/component/lcgc-ui/packages/demo/scripts/prepublish.js
+46 verbose publishing @lcgc-ui/demo
+47 silly publishTaggedInDir latest demo
+48 silly getExecOpts { cwd: '/Users/zhongxia/Code/component/lcgc-ui/packages/demo' }
+49 error publish Retrying failed publish: @lcgc-ui/demo
+50 verbose publish error undefined
+51 verbose publishing @lcgc-ui/demo
+52 silly publishTaggedInDir latest demo
+53 silly getExecOpts { cwd: '/Users/zhongxia/Code/component/lcgc-ui/packages/demo' }
+54 error publish Retrying failed publish: @lcgc-ui/demo
+55 verbose publish error undefined
+56 verbose publishing @lcgc-ui/demo
+57 silly publishTaggedInDir latest demo
+58 silly getExecOpts { cwd: '/Users/zhongxia/Code/component/lcgc-ui/packages/demo' }
+59 error publish Retrying failed publish: @lcgc-ui/demo
+60 verbose publish error undefined
+61 verbose publishing @lcgc-ui/demo
+62 silly publishTaggedInDir latest demo
+63 silly getExecOpts { cwd: '/Users/zhongxia/Code/component/lcgc-ui/packages/demo' }
+64 error publish Retrying failed publish: @lcgc-ui/demo
+65 verbose publish error undefined
+66 verbose publishing @lcgc-ui/demo
+67 silly publishTaggedInDir latest demo
+68 silly getExecOpts { cwd: '/Users/zhongxia/Code/component/lcgc-ui/packages/demo' }
+69 error publish Ran out of retries while publishing @lcgc-ui/demo Error: Command failed: npm publish --tag latest
+69 error publish npm ERR! publish Failed PUT 402
+69 error publish npm ERR! code E402
+69 error publish npm ERR! You must sign up for private packages : @lcgc-ui/demo
+69 error publish
+69 error publish npm ERR! A complete log of this run can be found in:
+69 error publish npm ERR!     /Users/zhongxia/.npm/_logs/2018-05-21T08_16_24_662Z-debug.log
+69 error publish
+69 error publish     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+69 error publish     at <anonymous>
+69 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
+70 error execute callback with error
+71 error Error: Command failed: npm publish --tag latest
+71 error npm ERR! publish Failed PUT 402
+71 error npm ERR! code E402
+71 error npm ERR! You must sign up for private packages : @lcgc-ui/demo
+71 error
+71 error npm ERR! A complete log of this run can be found in:
+71 error npm ERR!     /Users/zhongxia/.npm/_logs/2018-05-21T08_16_24_662Z-debug.log
+71 error
+71 error     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+71 error     at <anonymous>
